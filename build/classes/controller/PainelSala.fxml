@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="painelSala" prefHeight="250.0" prefWidth="420.0" style=": ;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SalaController">
+   <children>
+      <GridPane layoutX="56.0" layoutY="45.0" prefHeight="112.0" prefWidth="309.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Numero da Sala:" GridPane.rowIndex="1" />
+            <Label text="Quantidade de Assentos:" GridPane.rowIndex="2" />
+            <TextField fx:id="textFieldnSala" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="textFieldnAssentos" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label text="Cadastrar Sala">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </GridPane>
+      <Group AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="20.0">
+         <children>
+            <Button layoutX="329.0" layoutY="233.0" mnemonicParsing="false" onAction="#tratarBotaoCancelar" prefWidth="75.0" text="Cancelar" />
+            <Button layoutX="233.0" layoutY="233.0" mnemonicParsing="false" onAction="#tratarBotaoSalvar" prefWidth="75.0" text="Salvar" />
+         </children>
+      </Group>
+   </children>
+</AnchorPane>
