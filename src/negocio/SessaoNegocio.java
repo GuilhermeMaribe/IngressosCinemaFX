@@ -51,6 +51,14 @@ public class SessaoNegocio {
         return (null);
     }
     
+    public void atualizar(Sessao sessao) throws NegocioException {
+        if (sessao == null || sessao.getSala() == null) {
+            throw new NegocioException("Sessao nao existe!");
+        }
+        this.validarCamposObrigatorios(sessao);
+        sessaoDao.atualizar(sessao);
+    }    
+        
     private void validarCamposObrigatorios(Sessao s) throws NegocioException {
         if (s.getHorario() == null) {
             throw new NegocioException("Campo Horario nao informado");

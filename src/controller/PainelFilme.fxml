@@ -8,7 +8,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" fx:id="painelSala" prefHeight="250.0" prefWidth="420.0" style=": ;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SalaController">
+<AnchorPane id="AnchorPane" fx:id="painelFilme" prefHeight="250.0" prefWidth="420.0" style=": ;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.FilmeController">
    <children>
       <GridPane layoutX="56.0" layoutY="45.0" prefHeight="112.0" prefWidth="309.0">
         <columnConstraints>
@@ -19,17 +19,23 @@
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Label text="Numero da Sala:" GridPane.rowIndex="1" />
-            <Label text="Quantidade de Assentos:" GridPane.rowIndex="2" />
-            <TextField fx:id="textFieldnSala" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-            <TextField fx:id="textFieldnAssentos" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-            <Label text="Cadastrar Sala">
+             <Label text="Cadastrar Filme">
                <font>
                   <Font name="System Bold" size="17.0" />
                </font>
-            </Label>
+            </Label>  
+            <Label text="Codigo:" GridPane.rowIndex="1" />
+            <Label text="Nome:" GridPane.rowIndex="2" />
+            <Label text="Genero:" GridPane.rowIndex="3" />
+            <Label text="Sinopse" GridPane.rowIndex="4" />
+            <TextField fx:id="textFieldCodigo" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="textFieldNome" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="textFieldGenero" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="textFieldSinopse" GridPane.columnIndex="1" GridPane.rowIndex="4" />                  
          </children>
       </GridPane>
       <Group AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="20.0">
@@ -40,3 +46,4 @@
       </Group>
    </children>
 </AnchorPane>
+

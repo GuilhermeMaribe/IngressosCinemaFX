@@ -29,6 +29,13 @@ public class Sessao {
         this.sala = sala;
         this.filme = filme;
     }
+
+    public Sessao(String qtdIngresso, String horario, String sala, String filme) {
+        this.qtdIngresso = Integer.parseInt(qtdIngresso);
+        this.horario = Integer.parseInt(horario);
+        this.sala = Integer.parseInt(sala);
+        this.filme = Integer.parseInt(filme);
+    }
     
     public int getId() {
         return id;
@@ -72,4 +79,18 @@ public class Sessao {
     public void retiraIngresso(){
                 qtdIngresso--;    
             }
+    public void setQtdIngresso(String QtdIngresso) {
+        this.qtdIngresso = Integer.parseInt(QtdIngresso);
+    }
+    public String getQtdIngresso2() {
+        String aux = ""+qtdIngresso;
+        return aux;
+    }
+    public void setHorario(String Horario) {
+        this.horario = Integer.parseInt(Horario);
+    }
+    public String getHorario2() {
+        String aux = ""+horario;
+        return aux;
+    }
 }

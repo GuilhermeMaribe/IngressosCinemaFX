@@ -1,14 +1,13 @@
 package dao.impl_BD;
+
 import dao.FilmeDao;
+import dominio.Filme;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
-import dominio.Filme;
-/**
- *
- * @author Mari Bianchini
- */
+
+
 public class FilmeDaoBD extends DaoBd<Filme> implements FilmeDao{
     
 @Override
@@ -24,8 +23,7 @@ public class FilmeDaoBD extends DaoBd<Filme> implements FilmeDao{
             comando.setString(1, filme.getCodigo());
             comando.setString(2, filme.getNome());
             comando.setString(3, filme.getGenero());
-            comando.setString(4, filme.getSinopse());
-                      
+            comando.setString(4, filme.getSinopse());                      
             comando.executeUpdate();
             
             ResultSet resultado = comando.getGeneratedKeys();

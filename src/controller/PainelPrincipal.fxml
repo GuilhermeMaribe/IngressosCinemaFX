@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:id="painelPrincipal" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PrincipalController">
+   <children>
+      <ToolBar prefHeight="100.0" prefWidth="600.0" style="-fx-background-color: black;">
+        <items>
+          <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#tratarBotaoSala" prefHeight="58.0" prefWidth="108.0" style="-fx-background-color: yellow;" text="Sala" />
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#tratarBotaoFilme" prefHeight="58.0" prefWidth="108.0" style="-fx-background-color: yellow;" text="Filme" />
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#tratarBotaoSessao" prefHeight="58.0" prefWidth="108.0" style="-fx-background-color: yellow;" text="Sessão" />
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#tratarBotaoVender" prefHeight="58.0" prefWidth="108.0" style="-fx-background-color: yellow;" text="Vender Ingressos" />
+            <ImageView fitHeight="77.0" fitWidth="305.0" opacity="0.73" pickOnBounds="true" preserveRatio="true" translateX="180.0">
+               <image>
+                  <Image url="@../resources/653px-Senac_logo.svg.png" />
+               </image>
+            </ImageView>
+        </items>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </ToolBar>
+      <ImageView fitHeight="400.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/ingressoscinemamarcelino.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</VBox>
