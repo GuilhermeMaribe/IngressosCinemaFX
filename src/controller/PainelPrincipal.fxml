@@ -11,12 +11,12 @@
 
 <VBox fx:id="painelPrincipal" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PrincipalController">
    <children>
-      <ToolBar prefHeight="100.0" prefWidth="600.0" style="-fx-background-color: black;">
+      <ToolBar fx:id="tool" prefHeight="100.0" prefWidth="600.0" style="-fx-background-color: black;">
         <items>
-          <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#tratarBotaoSala" prefHeight="58.0" prefWidth="108.0" style="-fx-background-color: yellow;" text="Sala" />
-            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#tratarBotaoFilme" prefHeight="58.0" prefWidth="108.0" style="-fx-background-color: yellow;" text="Filme" />
-            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#tratarBotaoSessao" prefHeight="58.0" prefWidth="108.0" style="-fx-background-color: yellow;" text="Sessão" />
-            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#tratarBotaoVender" prefHeight="58.0" prefWidth="108.0" style="-fx-background-color: yellow;" text="Vender Ingressos" />
+          <Button fx:id="sala" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#tratarBotaoSala" prefHeight="58.0" prefWidth="108.0" style="-fx-background-color: yellow;" text="Sala" />
+            <Button fx:id="filme" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#tratarBotaoFilme" prefHeight="58.0" prefWidth="108.0" style="-fx-background-color: yellow;" text="Filme" />
+            <Button fx:id="sessao" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#tratarBotaoSessao" prefHeight="58.0" prefWidth="108.0" style="-fx-background-color: yellow;" text="Sessão" />
+            <Button fx:id="venda" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#tratarBotaoVender" prefHeight="58.0" prefWidth="108.0" style="-fx-background-color: yellow;" text="Vender Ingressos" />
             <ImageView fitHeight="77.0" fitWidth="305.0" opacity="0.73" pickOnBounds="true" preserveRatio="true" translateX="180.0">
                <image>
                   <Image url="@../resources/653px-Senac_logo.svg.png" />

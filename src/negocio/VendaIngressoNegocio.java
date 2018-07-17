@@ -80,11 +80,11 @@ public class VendaIngressoNegocio {
         }
         return (null);
     }      
-    public void atualizar(VendaIngresso ing) throws NegocioException {
+   /* public void atualizar(VendaIngresso ing) throws NegocioException {
         if (ing == null || ing.isEmpty()) {
             throw new NegocioException("Ingresso nao existe!");
         }
         this.validarCamposObrigatorios(ing);
         VendaIngressoDao.atualizar(ing);
-    }
+    }*/
 }

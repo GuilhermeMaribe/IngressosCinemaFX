@@ -1,7 +1,9 @@
 package controller;
 
+import dao.SalaDao;
+import dao.impl_BD.SalaDaoBD;
 import dominio.Sala;
-import ingressoscinema.IngressosCinema;
+
 import java.io.IOException;
 import java.net.URL;
 import java.util.List;
@@ -66,23 +68,28 @@ public class SalaController implements Initializable {
 
     private ObservableList<Sala> observableListaSalas;
     private SalaNegocio salaNegocio;
+    
 
+    
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         salaNegocio = new SalaNegocio();
+        
 
         //Codigo meio redundante - por isso as vezes é melhor um controller para cada view 
         if (tableViewSalas != null) {
             carregarTableViewSalas();
         }
+        
 
     }        
     
     private void carregarTableViewSalas() {
-        tableColumnnSala.setCellValueFactory(new PropertyValueFactory<>("nsala"));
-        tableColumnnAssentos.setCellValueFactory(new PropertyValueFactory<>("nassentos"));
+        tableColumnnSala.setCellValueFactory(new PropertyValueFactory<>("nSala"));
+        tableColumnnAssentos.setCellValueFactory(new PropertyValueFactory<>("nAssentos"));
         
         listaSalas = salaNegocio.listar();
+        
 
         observableListaSalas = FXCollections.observableArrayList(listaSalas);
         tableViewSalas.setItems(observableListaSalas);
@@ -183,8 +190,10 @@ public class SalaController implements Initializable {
 
     public void setSalaSelecionada(Sala salaSelecionada) {
         this.salaSelecionada = salaSelecionada;
-        textFieldnSala.setText(salaSelecionada.getnSala());
-        textFieldnAssentos.setText(salaSelecionada.getnAssentos2());
+        textFieldnSala.setText(salaSelecionada.getNSala());
+        textFieldnAssentos.setText(salaSelecionada.getNAssentos2());
         
     }
+
+    
 }

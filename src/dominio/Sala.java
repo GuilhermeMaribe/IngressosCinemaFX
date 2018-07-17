@@ -39,7 +39,7 @@ public class Sala {
         this.nSala = nSala;
     }
     
-    public String getnSala() {
+    public String getNSala() {
         return nSala;
     }
 
@@ -51,10 +51,10 @@ public class Sala {
         this.nAssentos = Integer.parseInt(nAssentos);
     }
     
-    public int getnAssentos() {
+    public int getNAssentos() {
         return nAssentos;
     }
-    public String getnAssentos2() {
+    public String getNAssentos2() {
         String aux = ""+nAssentos;
         return aux;
     }

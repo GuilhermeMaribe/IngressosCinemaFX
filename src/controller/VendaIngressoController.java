@@ -1,7 +1,6 @@
 package controller;
 
 import dominio.VendaIngresso;
-import ingressoscinema.IngressosCinema;
 import java.io.IOException;
 import java.net.URL;
 import java.util.List;
@@ -41,7 +40,7 @@ import javafx.geometry.Pos;
 
 
 
-public class VendaIngressoController implements Initializable {
+/*public class VendaIngressoController implements Initializable {
 
     @FXML
     private VBox painelTabelaVendaIngresso;
@@ -187,4 +186,4 @@ public class VendaIngressoController implements Initializable {
         textFieldsessao.setText(vendaSelecionada.getsessao());
         
     }
-}
+}*/

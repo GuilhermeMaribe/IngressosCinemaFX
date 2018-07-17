@@ -19,12 +19,12 @@
             <Insets />
          </VBox.margin>
       </ToolBar>
-      <TableView fx:id="tableViewFilme" prefHeight="314.0" prefWidth="420.0">
+      <TableView fx:id="tableViewFilmes" prefHeight="314.0" prefWidth="420.0">
         <columns>
-          <TableColumn fx:id="tableColumncodigo" minWidth="-1.0" prefWidth="56.0" text="Codigo" />
-          <TableColumn fx:id="tableColumnnome" minWidth="1.0" prefWidth="119.0" text="Nome" />
-          <TableColumn fx:id="tableColumngenero" minWidth="1.0" prefWidth="75.0" text="Genero" />
-          <TableColumn fx:id="tableColumnsinospse" minWidth="1.0" prefWidth="168.0" text="Sinopse" />
+          <TableColumn fx:id="tableColumnCodigo" minWidth="-1.0" prefWidth="56.0" text="Codigo" />
+          <TableColumn fx:id="tableColumnNome" minWidth="1.0" prefWidth="119.0" text="Nome" />
+          <TableColumn fx:id="tableColumnGenero" minWidth="1.0" prefWidth="75.0" text="Genero" />
+          <TableColumn fx:id="tableColumnSinopse" minWidth="1.0" prefWidth="168.0" text="Sinopse" />
         </columns>
       </TableView>
    </children>

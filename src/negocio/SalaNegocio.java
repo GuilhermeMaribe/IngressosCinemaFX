@@ -29,14 +29,14 @@ public class SalaNegocio {
     }
     
     public void deletar(Sala sala) throws NegocioException {
-        if (sala == null || sala.getnSala() == null) {
+        if (sala == null || sala.getNSala() == null) {
             throw new NegocioException("Sala nao existe!");
         }
         salaDao.deletar(sala);
     }
 
     public void atualizar(Sala sala) throws NegocioException {
-        if (sala == null || sala.getnSala() == null) {
+        if (sala == null || sala.getNSala() == null) {
             throw new NegocioException("Sala nao existe!");
         }
         this.validarCamposObrigatorios(sala);
@@ -60,17 +60,17 @@ public class SalaNegocio {
     }
 
     private void validarCamposObrigatorios(Sala s) throws NegocioException {
-        if (s.getnSala() == null || s.getnSala().isEmpty()) {
+        if (s.getNSala() == null || s.getNSala().isEmpty()) {
             throw new NegocioException("Campo Numero nao informado");
         }
 
-        if (s.getnAssentos() < 1) {   
+        if (s.getNAssentos() < 1) {   
             throw new NegocioException("Campo Quantidade de Assentos nao informado");
         }
     }
 
     private void validarNumeroExistente(Sala s) throws NegocioException {
-        if (salaExiste(s.getnSala())) {
+        if (salaExiste(s.getNSala())) {
             throw new NegocioException("Sala ja existente");
         }
     }

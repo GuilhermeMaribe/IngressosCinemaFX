@@ -13,7 +13,7 @@ import javafx.stage.Stage;
  *
  * @author guilh
  */
-public class IngressosCinema extends Application {
+/*public class IngressosCinema extends Application {
     
      @Override
     public void start(Stage stage) throws IOException {
@@ -31,3 +31,4 @@ public class IngressosCinema extends Application {
     
 }
     
+*/

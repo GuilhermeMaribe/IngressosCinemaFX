@@ -23,4 +23,5 @@ public interface SalaDao extends Dao<Sala> {
     public Sala procurarPorNumero(String numero);
 
     public List<Sala> listarPorNumero(String numero);
+    public List<Sala> listar();
 }

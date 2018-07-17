@@ -28,7 +28,6 @@ import negocio.FilmeNegocio;
 import negocio.NegocioException;
 import static sun.plugin.javascript.navig.JSType.URL;
 import view.PrintUtil;
-import ingressoscinema.IngressosCinemaFilme;
 import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -52,13 +51,13 @@ public class FilmeController implements Initializable {
     @FXML
     private TableView<Filme> tableViewFilmes;
     @FXML
-    private TableColumn<Filme, String> tableColumncodigo;
+    private TableColumn<Filme, String> tableColumnCodigo;
     @FXML
-    private TableColumn<Filme, String> tableColumnnome;
+    private TableColumn<Filme, String> tableColumnNome;
     @FXML
-    private TableColumn<Filme, String> tableColumngenero;
+    private TableColumn<Filme, String> tableColumnGenero;
     @FXML
-    private TableColumn<Filme, String> tableColumnsinopse;
+    private TableColumn<Filme, String> tableColumnSinopse;
     
     
     @FXML
@@ -91,10 +90,10 @@ public class FilmeController implements Initializable {
     }        
     
     private void carregarTableViewFilmes() {
-        tableColumncodigo.setCellValueFactory(new PropertyValueFactory<>("codigo"));
-        tableColumnnome.setCellValueFactory(new PropertyValueFactory<>("nome"));
-        tableColumngenero.setCellValueFactory(new PropertyValueFactory<>("genero"));
-        tableColumnsinopse.setCellValueFactory(new PropertyValueFactory<>("sinopse"));
+        tableColumnCodigo.setCellValueFactory(new PropertyValueFactory<>("Codigo"));
+        tableColumnNome.setCellValueFactory(new PropertyValueFactory<>("Nome"));
+        tableColumnGenero.setCellValueFactory(new PropertyValueFactory<>("Genero"));
+        tableColumnSinopse.setCellValueFactory(new PropertyValueFactory<>("Sinopse"));
         
         listaFilmes = filmeNegocio.listar();
 

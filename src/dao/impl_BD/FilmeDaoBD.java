@@ -112,6 +112,7 @@ public class FilmeDaoBD extends DaoBd<Filme> implements FilmeDao{
         } finally {
             fecharConexao();
         }
+        System.out.println("oi"+listaFilmes.size());
         return (listaFilmes);
     }
 

@@ -16,7 +16,7 @@ public class Sessao {
 
     public Sessao(LocalTime horario, Sala sala, Filme filme) {
         this.id = id;
-        this.qtdIngresso = sala.getnAssentos();
+        this.qtdIngresso = sala.getNAssentos();
         this.horario = horario;
         this.sala = sala;
         this.filme = filme;
@@ -30,12 +30,12 @@ public class Sessao {
         this.filme = filme;
     }
 
-    public Sessao(String qtdIngresso, String horario, String sala, String filme) {
+    /*public Sessao(String qtdIngresso, String horario, String sala, String filme) {
         this.qtdIngresso = Integer.parseInt(qtdIngresso);
         this.horario = Integer.parseInt(horario);
         this.sala = Integer.parseInt(sala);
         this.filme = Integer.parseInt(filme);
-    }
+    }*/
     
     public int getId() {
         return id;
@@ -86,11 +86,11 @@ public class Sessao {
         String aux = ""+qtdIngresso;
         return aux;
     }
-    public void setHorario(String Horario) {
+    /*public void setHorario(String Horario) {
         this.horario = Integer.parseInt(Horario);
     }
     public String getHorario2() {
         String aux = ""+horario;
         return aux;
-    }
+    }*/
 }

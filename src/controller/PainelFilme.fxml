@@ -32,10 +32,10 @@
             <Label text="Nome:" GridPane.rowIndex="2" />
             <Label text="Genero:" GridPane.rowIndex="3" />
             <Label text="Sinopse" GridPane.rowIndex="4" />
-            <TextField fx:id="textFieldCodigo" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-            <TextField fx:id="textFieldNome" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-            <TextField fx:id="textFieldGenero" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-            <TextField fx:id="textFieldSinopse" GridPane.columnIndex="1" GridPane.rowIndex="4" />                  
+            <TextField fx:id="textFieldcodigo" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="textFieldnome" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="textFieldgenero" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="textFieldsinopse" GridPane.columnIndex="1" GridPane.rowIndex="4" />                  
          </children>
       </GridPane>
       <Group AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="20.0">

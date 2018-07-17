@@ -15,7 +15,7 @@ import controller.FilmeController;
  *
  * @author guilh
  */
-public class IngressosCinemaFilme extends Application {
+/*public class IngressosCinemaFilme extends Application {
     
     @Override
     public void start(Stage stage) throws IOException {
@@ -32,3 +32,4 @@ public class IngressosCinemaFilme extends Application {
     }
     
 }
+*/

@@ -25,8 +25,8 @@ public class SalaDaoBD extends DaoBd<Sala> implements SalaDao {
 
             
             conectarObtendoId(sql);
-            comando.setString(1, sala.getnSala());
-            comando.setInt(2, sala.getnAssentos());
+            comando.setString(1, sala.getNSala());
+            comando.setInt(2, sala.getNAssentos());
             comando.executeUpdate();
             
             ResultSet resultado = comando.getGeneratedKeys();
@@ -72,8 +72,8 @@ public class SalaDaoBD extends DaoBd<Sala> implements SalaDao {
                     + "WHERE id=?";
 
             conectar(sql);
-            comando.setString(1, sala.getnSala());
-            comando.setInt(2, sala.getnAssentos());
+            comando.setString(1, sala.getNSala());
+            comando.setInt(2, sala.getNAssentos());
             comando.setInt(3, sala.getId());
             comando.executeUpdate();
 
@@ -125,8 +125,8 @@ public class SalaDaoBD extends DaoBd<Sala> implements SalaDao {
             ResultSet resultado = comando.executeQuery();
 
             if (resultado.next()) {
-                String nSala = resultado.getString("nSala");
-                int nAssentos = resultado.getInt("nAssentos");
+                String nSala = resultado.getString("nsala");
+                int nAssentos = resultado.getInt("nassentos");
 
                 Sala sal = new Sala(id, nSala, nAssentos);
 
@@ -146,7 +146,7 @@ public class SalaDaoBD extends DaoBd<Sala> implements SalaDao {
 
     @Override
     public Sala procurarPorNumero(String nSala) {
-        String sql = "SELECT * FROM sala WHERE nSala = ?";
+        String sql = "SELECT * FROM sala WHERE nsala = ?";
 
         try {
             conectar(sql);
@@ -156,7 +156,7 @@ public class SalaDaoBD extends DaoBd<Sala> implements SalaDao {
 
             if (resultado.next()) {
                 int id = resultado.getInt("id");
-                int nAssentos = resultado.getInt("nAssentos");
+                int nAssentos = resultado.getInt("nassentos");
                 
                 Sala Sal = new Sala(id, nSala, nAssentos);
 
@@ -177,7 +177,7 @@ public class SalaDaoBD extends DaoBd<Sala> implements SalaDao {
     @Override
     public List<Sala> listarPorNumero(String nSala) {
         List<Sala> listaSalas = new ArrayList<>();
-        String sql = "SELECT * FROM sala WHERE nSala LIKE ?";
+        String sql = "SELECT * FROM sala WHERE nsala LIKE ?";
 
         try {
             conectar(sql);
@@ -187,9 +187,9 @@ public class SalaDaoBD extends DaoBd<Sala> implements SalaDao {
             while (resultado.next()) {
                 int id = resultado.getInt("id");
                 
-                String nSalaX = resultado.getString("nSala");
+                String nSalaX = resultado.getString("nsala");
                 
-                int nAssentos = resultado.getInt("nAssentos");
+                int nAssentos = resultado.getInt("nassentos");
 
                 Sala sal = new Sala(id, nSalaX, nAssentos);
 

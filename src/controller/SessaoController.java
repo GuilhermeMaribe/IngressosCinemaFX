@@ -30,7 +30,7 @@ import view.PrintUtil;
  *
  * @author guilh
  */
-public class SessaoController implements Initializable {
+/*public class SessaoController implements Initializable {
     @FXML
     private VBox painelTabelaSessao;
     @FXML
@@ -161,7 +161,7 @@ public class SessaoController implements Initializable {
             try {
                 sessaoSelecionada.setQtdIngresso(textFieldqtdIngresso.getText());
                 sessaoSelecionada.setHorario(textFieldhorario.getText());
-                sessaoSelecionada.setSala(textFieldSala.getText());
+                sessaoSelecionada.setSala(textFieldsala.getText());
                 sessaoSelecionada.setFilme(textFieldfilme.getText()
                 );                        
                 sessaoNegocio.atualizar(sessaoSelecionada);
@@ -194,4 +194,4 @@ public class SessaoController implements Initializable {
         
     }
     
-}
+}*/
